@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Línea María Juana | Artemisa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="https://wa.me/5491155609045?text=Hola%20Artemisa,%20vengo%20de%20la%20Línea%20María%20Juana%20y%20tengo%20una%20consulta." class="float-btn float-wsp" target="_blank">WhatsApp</a>
+
+   <header>
+        <nav class="navbar">
+            <div class="logo">ARTEMISA</div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="solidos.html">Shampoo</a></li>
+                <li><a href="jabones.html">Jabones</a></li>
+                <li><a href="cremas.html">Cremas</a></li>
+                <li><a href="cuidado.html">Cuidado Diario</a></li>
+                <li><a href="mariajuana.html">Línea MJ</a></li>
+                <li><a href="esoterico.html">Esoterismo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="productos-page">
+        <h1>Línea María Juana</h1>
+        <div class="productos-grid">
+            
+            <article class="producto-card">
+                <img src="untocanabico.jpg" alt="Unto Cannábico">
+                <h3>Unto Cannábico</h3>
+                <p class="desc">Ungüento para dolores musculares, golpes, heridas y esguinces. Desinflama y cicatriza rápidamente.</p>
+                <p class="precio">$8000</p>
+                <button class="btn-comprar" onclick="comprarPorWsp('Unto Cannábico', 8000, 'María Juana')">Pedir por WhatsApp</button>
+            </article>
+
+            <article class="producto-card">
+                <img src="lubricante.jpg" alt="Lubricante Íntimo">
+                <h3>Lubricante con CBD</h3>
+                <p class="desc">Lubrica y relaja la zona gracias al CBD. Aceite de caléndula, coco y cera de abeja. Sabor chocolate.</p>
+                <p class="precio">$10000</p>
+                <button class="btn-comprar" onclick="comprarPorWsp('Lubricante Íntimo CBD', 10000, 'María Juana')">Pedir por WhatsApp</button>
+            </article>
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Artemisa - Productos naturales, Reiki, Flores de Bach y Tarot por Noelia.">
+    <title>Artemisa | Bienestar Natural y Espiritualidad</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="social-float">
+        <a href="https://instagram.com/arte_misanatural" class="float-btn float-ig" target="_blank" aria-label="Instagram">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="IG" width="25">
+        </a>
+        <a href="https://wa.me/5491155609045?text=Hola%20Artemisa,%20vengo%20desde%20la%20web%20y%20quiero%20hacer%20una%20consulta." class="float-btn float-wsp" target="_blank" aria-label="WhatsApp">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WSP" width="25">
+        </a>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">ARTEMISA</div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="solidos.html">Shampoo</a></li>
+                <li><a href="jabones.html">Jabones</a></li>
+                <li><a href="cremas.html">Cremas</a></li>
+                <li><a href="cuidado.html">Cuidado Diario</a></li>
+                <li><a href="mariajuana.html">Línea MJ</a></li>
+                <li><a href="esoterico.html">Esoterismo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-slider">
+            <div class="slide active" style="background-image: url('noelia1.jpg');"></div>
+            <div class="slide" style="background-image: url('noelia2.jpg');"></div>
+            <div class="slide" style="background-image: url('logoartemisa.jpg');"></div>
+            
+            <div class="slider-overlay">
+                <h1>Artemisa</h1>
+                <p>30 años de mística y amor por lo natural</p>
+                <a href="#nosotros" class="btn-scroll">Conocer a Noelia</a>
+            </div>
+        </section>
+
+        <section class="sobre-nosotros" id="nosotros">
+            <div class="container">
+                <h2>Nuestra Historia</h2>
+                <div class="historia-grid">
+                    <div class="texto-historia">
+                        <p>Bajo la guía de <strong>Noelia</strong>, Artemisa nace de la convicción de que la sanación real proveniente de la madre tierra. Especialista en limpiezas energetcas , Reiki, Tarot, Flores de Bach , Tinturas madres y Biocosmetica natural. Noelia ha dedicado tres décadas a perfeccionar fórmulas que respetan el medio ambiente.</p>
+                        <p>Cada producto es <strong>100% artesanal, apto vegano , libre de parabenos y químicos nocivos</strong>. Creemos en la cosmética natural con propósito y en la energía universal como motor de cambio.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="galeria-historia">
+    <div class="galeria-container">
+    <img src="selva.jpg" alt="Noelia en la selva" onclick="agrandarImagen(this)" style="cursor: zoom-in;">
+    <img src="meditacion.jpg" alt="Noelia meditando" onclick="agrandarImagen(this)" style="cursor: zoom-in;">
+</div>
+
+
+</div><div id="modal-foto" onclick="cerrarImagen()" style="display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100vw; height: 100vh; background-color: rgba(0,0,0,0.95); align-items: center; justify-content: center;">
+    <span style="position: absolute; top: 20px; right: 30px; color: white; font-size: 50px; cursor: pointer; z-index: 10000;">&times;</span>
+    <img id="foto-grande" style="max-width: 90vw; max-height: 85vh; width: auto; height: auto; object-fit: contain; border-radius: 10px; box-shadow: 0 0 20px rgba(255,255,255,0.2);">
+</div>
+        </div>
+</section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

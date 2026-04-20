@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuidado Diario | Artemisa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="https://wa.me/5491155609045?text=Hola%20Artemisa,%20vengo%20de%20la%20sección%20Cuidado%20Diario%20y%20tengo%20una%20consulta." class="float-btn float-wsp" target="_blank">WhatsApp</a>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">ARTEMISA</div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="solidos.html">Shampoo</a></li>
+                <li><a href="jabones.html">Jabones</a></li>
+                <li><a href="cremas.html">Cremas</a></li>
+                <li><a href="cuidado.html">Cuidado Diario</a></li>
+                <li><a href="mariajuana.html">Línea MJ</a></li>
+                <li><a href="esoterico.html">Esoterismo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="productos-page">
+        <h1>Línea de Cuidado Diario</h1>
+        <div class="productos-grid">
+            
+            <article class="producto-card">
+                <img src="balsamolabial.jpg" alt="Bálsamo Labial">
+                <h3>Bálsamo Labial</h3>
+                <p class="desc">Aceite de coco, manteca de cacao, karité, vitamina E. Sabor coco o naranja.</p>
+                <p class="precio">$5000</p>
+                <button class="btn-comprar" onclick="comprarPorWsp('Bálsamo Labial', 5000, 'Cuidado Diario')">Pedir por WhatsApp</button>
+            </article>
+
+            <article class="producto-card">
+                <img src="pastadental.jpg" alt="Pasta Dental">
+                <h3>Pasta Dental Gel</h3>
+                <p class="desc">Sin flúor. Eucalipto, clavo de olor, menta, tea tree. Versión común o blanqueadora con carbón activado.</p>
+                <p class="precio">$5000</p>
+                <button class="btn-comprar" onclick="comprarPorWsp('Pasta Dental Gel', 5000, 'Cuidado Diario')">Pedir por WhatsApp</button>
+            </article>
+
+            <article class="producto-card">
+                <img src="desodorantes.jpg" alt="Desodorantes Naturales">
+                <h3>Desodorantes Naturales</h3>
+                <p class="desc">Manteca de cacao, karité, arcillas, zinc. Hidratan, protegen y tienen efecto aclarante a corto plazo.</p>
+                <p class="precio">$5000</p>
+                <button class="btn-comprar" onclick="comprarPorWsp('Desodorantes Naturales', 5000, 'Cuidado Diario')">Pedir por WhatsApp</button>
+            </article>
+
+            <article class="producto-card">
+                <img src="aguamicelar.jpg" alt="Agua Micelar">
+                <h3>Agua Micelar</h3>
+                <p class="desc">Para todo tipo de pieles. Limpian e hidratan en profundidad dejando la piel fresca.</p>
+                <p class="precio">$3500</p>
+                <button class="btn-comprar" onclick="comprarPorWsp('Agua Micelar', 3500, 'Cuidado Diario')">Pedir por WhatsApp</button>
+            </article>
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
