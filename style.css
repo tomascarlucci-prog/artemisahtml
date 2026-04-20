@@ -570,3 +570,38 @@ header {
     display: flex;
   }
 }
+/* --- 1. ARREGLO DE LAS 3 RAYITAS --- */
+.menu-toggle {
+    background-color: transparent !important; /* Quita el cuadro negro de fondo */
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+}
+
+.menu-toggle .bar {
+    display: block;
+    width: 30px;
+    height: 4px; /* Grosor de la línea */
+    background-color: #2d4a22 !important; /* Color verde oscuro para las rayas */
+    margin: 4px 0 !important; /* ESTO ES CLAVE: Separa las líneas para que no sean un bloque */
+    border-radius: 3px;
+}
+
+/* --- 2. ARREGLO DEL COLOR DEL MENÚ (FONDO Y LETRAS) --- */
+@media (max-width: 768px) {
+    .nav-links {
+        background-color: #eaf3ea !important; /* Fondo verde pastel natural */
+    }
+    
+    .nav-links li a {
+        color: #2d4a22 !important; /* Letras en verde oscuro legible */
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+    
+    .nav-links li {
+        border-bottom: 1px solid #c1dabc !important; /* Separador verde más claro */
+    }
+}
