@@ -510,3 +510,63 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+/* RESET BÁSICO PARA QUE NO SE ROMPA */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+/* BOTÓN HAMBURGUESA */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* MENÚ NORMAL (DESKTOP) */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+/* 📱 MODO CELULAR */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background: black;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    z-index: 1000;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 70%;
+    background: #111;
+    padding: 20px;
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
