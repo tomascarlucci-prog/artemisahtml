@@ -51,3 +51,15 @@ function cerrarImagen() {
     var modal = document.getElementById("modal-foto");
     modal.style.display = "none";
 }
+// --- FUNCIONAMIENTO DEL MENÚ HAMBURGUESA EN CELULAR ---
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    if(mobileMenu) {
+        mobileMenu.addEventListener('click', function() {
+            // Esto "prende" y "apaga" el menú cada vez que tocas
+            navLinks.classList.toggle('active');
+        });
+    }
+});

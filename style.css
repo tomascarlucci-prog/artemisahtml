@@ -498,3 +498,15 @@ h1, h2, .logo {
     background-color: #f8bbd0; /* Un rosa un poquito más fuerte */
     transition: background-color 0.3s ease;
 }
+// --- FUNCIONAMIENTO DEL MENÚ HAMBURGUESA EN CELULAR ---
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    if(mobileMenu) {
+        mobileMenu.addEventListener('click', function() {
+            // Esto "prende" y "apaga" el menú cada vez que tocas
+            navLinks.classList.toggle('active');
+        });
+    }
+});
