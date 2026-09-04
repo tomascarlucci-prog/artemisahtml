@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Artemisa - Cursos y Capacitaciones de Cosmética Natural.">
+    <title>Cursos y Kits | Artemisa</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="social-float">
+        <a href="https://instagram.com/arte_misanatural" class="float-btn float-ig" target="_blank" aria-label="Instagram">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="IG" width="25">
+        </a>
+        <a href="https://wa.me/5491155609045?text=Hola%20Artemisa,%20vengo%20desde%20la%20sección%20Cursos%20de%20la%20web%20y%20quiero%20hacer%20una%20consulta." class="float-btn float-wsp" target="_blank" aria-label="WhatsApp">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WSP" width="25">
+        </a>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">ARTEMISA</div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="solidos.html">Shampoo</a></li>
+                <li><a href="jabones.html">Jabones</a></li>
+                <li><a href="cremas.html">Cremas</a></li>
+                <li><a href="cuidado.html">Cuidado Diario</a></li>
+                <li><a href="mariajuana.html">Línea MJ</a></li>
+                <li><a href="esoterico.html">Esoterismo</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="productos-page" style="padding-top: 120px;">
+        
+        <h1 style="color: #2d4a34; margin-bottom: 30px;">Cursos y Capacitaciones</h1>
+        
+        <h2 style="font-family: 'Playfair Display', serif; color: #2d4a34; font-size: 2rem; margin-bottom: 20px;">Opciones del Curso</h2>
+        
+        <div class="productos-grid">
+            
+            <article class="producto-card">
+                <img src="cursocompleto.jpg" alt="Curso Completo" onclick="agrandarImagen(this)" style="cursor: zoom-in; object-fit: contain; background-color: #fff;" title="Haz clic para ver la foto completa">
+                <h3 style="margin-bottom: 15px; color: #2d4a34;">Curso Completo</h3>
+                <a href="https://wa.me/5491155609045?text=Hola!%20Me%20interesa%20comprar%20el%20Curso%20Completo." target="_blank" class="btn-comprar" style="display:inline-block; margin-top: auto;">Pedir por WhatsApp</a>
+            </article>
+
+            <article class="producto-card">
+                <img src="primeramitadcurso.jpg" alt="Primera Mitad del Curso" onclick="agrandarImagen(this)" style="cursor: zoom-in; object-fit: contain; background-color: #fff;" title="Haz clic para ver la foto completa">
+                <h3 style="margin-bottom: 15px; color: #2d4a34;">Curso (Primera Mitad)</h3>
+                <a href="https://wa.me/5491155609045?text=Hola!%20Me%20interesa%20comprar%20la%20Primera%20Mitad%20del%20curso." target="_blank" class="btn-comprar" style="display:inline-block; margin-top: auto;">Pedir por WhatsApp</a>
+            </article>
+
+            <article class="producto-card">
+                <img src="segundamitadcurso.jpg" alt="Segunda Mitad del Curso" onclick="agrandarImagen(this)" style="cursor: zoom-in; object-fit: contain; background-color: #fff;" title="Haz clic para ver la foto completa">
+                <h3 style="margin-bottom: 15px; color: #2d4a34;">Curso (Segunda Mitad)</h3>
+                <a href="https://wa.me/5491155609045?text=Hola!%20Me%20interesa%20comprar%20la%20Segunda%20Mitad%20del%20curso." target="_blank" class="btn-comprar" style="display:inline-block; margin-top: auto;">Pedir por WhatsApp</a>
+            </article>
+
+        </div>
+
+        <h2 style="font-family: 'Playfair Display', serif; color: #2d4a34; font-size: 2rem; margin-top: 60px; margin-bottom: 20px;">Kits de Materiales</h2>
+        
+        <div class="productos-grid">
+
+            <article class="producto-card">
+                <img src="kitshampoo.jpg" alt="Kit Shampoo y Acondicionador Sólido">
+                <h3 style="margin-bottom: 10px; color: #2d4a34;">Kit Shampoo y Acondicionador</h3>
+                <p class="desc" style="display: block; text-align: left; line-height: 1.6; margin-bottom: 15px;">
+                    • 1/2 kg Sci (base shampoo)<br>
+                    • 1/2 kg Eco wax (base acondicionador)<br>
+                    • 1 molde de 12 unidades<br>
+                    • 2 esencias a elección (Consultar)<br>
+                    • 100cc aceite de coco
+                </p>
+                <p class="precio" style="font-size: 1.3rem; color: #2d4a34;">$50.000</p>
+                <button class="btn-comprar" onclick="comprarPorWsp('Kit Shampoo y Acondicionador Sólido', 50000, 'Kits')">Pedir por WhatsApp</button>
+            </article>
+
+            <article class="producto-card">
+                <img src="kitjabon.jpg" alt="Kit Jabones">
+                <h3 style="margin-bottom: 10px; color: #2d4a34;">Kit Jabones</h3>
+                <p class="desc" style="display: block; text-align: left; line-height: 1.6; margin-bottom: 15px;">
+                    • 1 barra jabón coco blanca<br>
+                    • 1 barra jabón glicerina translúcida<br>
+                    • 2 esencias a elección (Consultar)<br>
+                    • 1 molde silicona 6 jabones<br>
+                    • 100c/c de aceite de coco
+                </p>
+                <p class="precio" style="font-size: 1.3rem; color: #2d4a34;">$40.000</p>
+                <button class="btn-comprar" onclick="comprarPorWsp('Kit Jabones', 40000, 'Kits')">Pedir por WhatsApp</button>
+            </article>
+
+        </div>
+    </main>
+
+    <div id="modal-foto" onclick="cerrarImagen()" style="display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100vw; height: 100vh; background-color: rgba(0,0,0,0.95); align-items: center; justify-content: center;">
+        <span style="position: absolute; top: 20px; right: 30px; color: white; font-size: 50px; cursor: pointer; z-index: 10000;">&times;</span>
+        <img id="foto-grande" style="max-width: 90vw; max-height: 85vh; width: auto; height: auto; object-fit: contain; border-radius: 10px; box-shadow: 0 0 20px rgba(255,255,255,0.2);">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
